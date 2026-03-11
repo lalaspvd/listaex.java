@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="contador">0</h2>
+    <button onclick="sumar()">+</button>
+    <button onclick="restar()">-</button>
+    <button onclick="resetear()">Zerar</button>
+
+    <script>
+        let valor = 0;
+        let contador = document.getElementById("contador");
+        function actualizar() {
+            contador.textContent = valor;
+        }
+
+        function sumar() {
+            valor++;
+            actualizar();
+        }
+
+        function restar() {
+            valor--;
+            actualizar();
+        }
+
+        function resetear() {
+            valor = 0;
+            actualizar();
+        }
+    </script>
+</body>
+
+</html>

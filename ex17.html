@@ -1,0 +1,20 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inicio">
+    <p id="texto"></p>
+    
+    <script>
+        let input = document.getElementById("inicio");
+        let texto = document.getElementById("texto");
+        input.addEventListener("input", function() {
+            texto.textContent = input.value
+            });
+    </script>
+</body>
+</html> 
